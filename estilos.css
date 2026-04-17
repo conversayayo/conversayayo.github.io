@@ -13,8 +13,8 @@ main {
     flex: 1;
     background-color: #ded1d1;
 }
+
 header {
-    background-color: #222;
     color: white;
     padding: 20px;
     text-align: center;
@@ -22,11 +22,14 @@ header {
     align-content: center;
     justify-content: center;
     height: 200px;
-    background-image: url("C:\Users\prenmor2605\Desktop\Pagina web\Páginita\prenmor2605\imagenes\214900802-fondo-degradado-negro-abstracto-para-diseño-de-impresión-o-recursos-gráficos-espacio-en-blanco-para.webp");
+    background: 
+        linear-gradient(135deg, rgba(0,0,0,0.7), rgba(80,80,80,0.5)),
+        url("imagenes/214900802-fondo-degradado-negro-abstracto-para-diseño-de-impresión-o-recursos-gráficos-espacio-en-blanco-para.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
-
-
-
 
 .texto{
     display: flex;
@@ -68,11 +71,12 @@ ul li a:hover {
 }
 
 footer{
-    background-color: #222;
     color: white;
     padding: 15px;
     text-align: center;
-
+    background: 
+        linear-gradient(135deg, rgba(0,0,0,0.7), rgba(80,80,80,0.5)),
+        url("imagenes/214900802-fondo-degradado-negro-abstracto-para-diseño-de-impresión-o-recursos-gráficos-espacio-en-blanco-para.webp");
 }
 
 .fotos{
@@ -80,6 +84,11 @@ footer{
     gap: 20px;
     justify-content: center;
     align-content: center;
+    transition: transform 0.3s ease;
+}
+
+.fotos:hover {
+    transform: scale(1.05);
 }
 
 .contenido-formulario{
@@ -155,6 +164,7 @@ button:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
+
 button:hover{
     border: solid 1px #444;
     background-color: #ffffff;
@@ -195,44 +205,65 @@ button:hover{
 /* Quienes somos*/
 .personas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    align-items: start;
-    padding: 40px;
+    grid-template-columns: repeat(3, 33%);
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 10px;
 }
 
 .Titulo{
     text-align: center;
 }
 .pedro{
-    width: 400px;
+    max-width: 400px;
     background: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s;
+    justify-content: center;
+    align-content: center;
+}
+
+.pedro:hover {
+    transform: scale(1.05);
 }
 
 .pablo{
-    width: 400px;
+    max-width: 400px;
     background: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s;
+}
+
+.pablo:hover {
+    transform: scale(1.05);
+}
+
+.personas img{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .isaias{
-    width: 400px;
+    max-width: 400px;
     background: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s;
+}
+
+.isaias:hover {
+    transform: scale(1.05);
 }
 
 .chima{
-    width: 400px;
+    max-width: 400px;
     background: #ffffff;
     padding: 30px;
     border-radius: 12px;
@@ -240,13 +271,21 @@ button:hover{
     transition: transform 0.5s;
 }
 
+.chima:hover {
+    transform: scale(1.05);
+}
+
 .dani{
-    width: 400px;
+    max-width: 400px;
     background: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s;
+}
+
+.dani:hover {
+    transform: scale(1.05);
 }
 
 /*Página principal*/
@@ -272,6 +311,10 @@ button:hover{
     transition: transform 0.5s;
 }
 
+.resumen:hover {
+    transform: scale(1.05);
+}
+
 .Que_ofrecemos{
     width: 500px;
     background: #ffffff;
@@ -279,6 +322,10 @@ button:hover{
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s;
+}
+
+.Que_ofrecemos:hover {
+    transform: scale(1.05);
 }
 
 .sobre_nosotros{
@@ -290,6 +337,10 @@ button:hover{
     transition: transform 0.5s;
 }
 
+.sobre_nosotros:hover {
+    transform: scale(1.05);
+}
+
 .contacto{
     width: 500px;
     background: #ffffff;
@@ -297,4 +348,43 @@ button:hover{
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s;
+}
+
+.contacto:hover {
+    transform: scale(1.05);
+}
+
+
+.contenedor-producto{
+    width: 700px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.contenedor-producto:hover {
+    transform: scale(1.05);
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fila p{
+    width: 45%;
+    text-align: left;
+}
+
+.fila img{
+    width: 45%;
+    height: auto;
 }
