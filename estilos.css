@@ -121,6 +121,21 @@ footer{
     transition: transform 0.5s;
 }
 
+.formulario{
+    width: 500px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s;
+    height: 350px;
+    margin: 20px;
+}
+
+.formulario:hover{
+    transform: scale(1.05);
+}
+
 .contact-form:hover{
     transform: scale(1.05);
 }
